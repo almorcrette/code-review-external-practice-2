@@ -12,5 +12,11 @@ describe '#filter' do
   it 'returns [1000] from input: [1200], 40, 1000' do
     expect(filter([1200], 40, 1000)).to eq([1000])
   end
+
+  context 'limits no given' do
+    it 'returns [40] from input: [20]' do
+      expect(filter([20])).to eq([40])
+    end
+  end
   
 end

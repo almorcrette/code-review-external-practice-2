@@ -17,6 +17,10 @@ describe '#filter' do
     it 'returns [40] from input: [20]' do
       expect(filter([20])).to eq([40])
     end
+
+    it 'returns [1000] from input: [1200]' do
+      expect(filter([1200])).to eq([1000])
+    end
   end
   
 end

@@ -22,5 +22,11 @@ describe '#filter' do
       expect(filter([1200])).to eq([1000])
     end
   end
+
+  context 'sound file not given' do
+    it 'raise an error if sound fil not given' do
+      expect { filter(40, 1000) }.to raise_error
+    end
+  end
   
 end
